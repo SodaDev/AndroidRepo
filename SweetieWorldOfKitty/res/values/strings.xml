@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SweetieWorldOfKitty</string>
+    <string name="welcome_to_app">Welcome in Sweetie World Of Kitty! :D</string>
+    <string name="menu_settings">Settings</string>
+    <string name="feed_the_kitty">Nakarm Kiciusia</string>
+    <string name="create_the_kitty">Stwórz nowego Kiciusia</string>
+    <string name="enter_the_kitty_name">Wprowadź imię Kiciusia</string>
+
+</resources>
