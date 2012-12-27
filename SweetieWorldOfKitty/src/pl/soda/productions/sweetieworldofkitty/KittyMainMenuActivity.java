@@ -15,7 +15,7 @@ public class KittyMainMenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kitty_main_menu);
         
-        final Button buttonCreator = (Button) findViewById(R.id.buttonFeed);
+        final Button buttonCreator = (Button) findViewById(R.id.buttonCreateKittyMenu);
         buttonCreator.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -30,43 +30,10 @@ public class KittyMainMenuActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				buttonFeeder.setText(buttonFeeder.getText() + "8==>");
-				finish();
+				Intent intent = new Intent(v.getContext(), KittyFeederActivity.class);
+				startActivity(intent);
 			}
 		});
-//        KittensContentProvider kittensProvider = new KittensContentProvider();
-//        ContentValues values = new ContentValues();
-//        values.put(KittensTableMetaData.KITTY_NAME, "Ciusia");
-//        values.put(KittensTableMetaData.KITTY_CASH, 100);
-//        values.put(KittensTableMetaData.KITTY_HUNGER, 100);
-//        values.put(KittensTableMetaData.KITTY_SMOKE, 100);
-//        values.put(KittensTableMetaData.KITTY_HAPPINESS, 100);
-//        values.put(KittensTableMetaData.KITTY_EXPERIENCE, 100);
-//        values.put(KittensTableMetaData.KITTY_LEVEL, 0);
-//        
-//        int iterator = 0;
-//        String[] columnsNames = new String[KittensContentProvider.kittensProjectionsMap.values().size()]; 
-//        for(String column : KittensContentProvider.kittensProjectionsMap.values()){
-//        	columnsNames[iterator] = column;
-//        	iterator++;
-//        }
-//        
-//        Cursor results = kittensProvider.query(KittensTableMetaData.CONTENT_URI,
-//				  			  columnsNames, 
-//				  			  null, 
-//				  			  null, 
-//				  			  null);
-//         
-//        if(results.moveToNext() == false){
-//        	Log.v("cursorTag", "empty Query!");
-//        }
-//        
-//        int nameColumnId = results.getColumnIndex(KittensTableMetaData.KITTY_NAME);
-//        while(results.moveToNext()){
-//        	Log.v("cursorTag", results.getString(nameColumnId));
-//        }
-        
-//        System.out.println("new record uri is: " + kittensProvider.insert(KittensTableMetaData.CONTENT_URI, values));
     }
 
     @Override

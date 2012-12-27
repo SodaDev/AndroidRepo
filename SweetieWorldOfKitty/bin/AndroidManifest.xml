@@ -27,6 +27,7 @@
             >
         </activity>
         <provider android:name=".data.storage.KittensContentProvider" android:authorities="pl.soda.productions.sweetieworldofkitty.data.storage.provider.KittensContentProvider"></provider>
+        <activity android:name="pl.soda.productions.sweetieworldofkitty.KittyFeederActivity"></activity>
         
     </application>
 

@@ -5,14 +5,22 @@
     android:orientation="vertical" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editKittyNameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/create_the_kitty" >
+        android:text="@string/enter_the_kitty_name" >
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/buttonCreateKitty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/create_button_label" />
 
 </LinearLayout>

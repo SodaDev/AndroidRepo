@@ -7,5 +7,6 @@
     <string name="feed_the_kitty">Nakarm Kiciusia</string>
     <string name="create_the_kitty">Stwórz nowego Kiciusia</string>
     <string name="enter_the_kitty_name">Wprowadź imię Kiciusia</string>
+    <string name="create_button_label">Stwórz!</string>
 
 </resources>
